@@ -12,6 +12,7 @@ public class AccountController {
     @Autowired
     private AccountService accountService;
 
+    @GetMapping("/{id}")
     public ResponseDTO getAccountDetail(@PathVariable Integer id){
         return accountService.getAccountDetailById(id);
     }
