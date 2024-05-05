@@ -22,7 +22,7 @@ public class GenreService {
     @Autowired
     private GenreRepository genreRepository;
 
-    public ResponseDTO getAccountDetailById(Integer id) {
+    public ResponseDTO getGenreDetailById(Integer id) {
         log.info("----- Get genre Start------");
         try {
             Genre genre = genreRepository.findById(id)

@@ -15,7 +15,7 @@ public class GenreController {
 
     @GetMapping("/{id}")
     public ResponseDTO getGenreDetail(@PathVariable Integer id){
-        return genreService.getAccountDetailById(id);
+        return genreService.getGenreDetailById(id);
     }
 
     @GetMapping("/{all}")
