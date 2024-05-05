@@ -3,6 +3,7 @@ package com.example.bookingticket.model.entity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
@@ -21,6 +22,7 @@ public class Account {
     @Column(name = "nickname", length = 100)
     private String nickName;
 
+    @Getter
     @Column(name = "name", length = 100)
     private String name;
 
@@ -51,4 +53,5 @@ public class Account {
 
     @Column(name="avatar")
     private String avatar;
+
 }

@@ -1,7 +1,7 @@
 package com.example.bookingticket.config.security;
 
-import com.manahotel.be.repository.TokenRepository;
-import com.manahotel.be.service.JwtService;
+import com.example.bookingticket.repository.TokenRepository;
+import com.example.bookingticket.service.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
